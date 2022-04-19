@@ -34,6 +34,8 @@ namespace PuntoDeVenta
                 timer1.Enabled = false;
 
                 MessageBox.Show("Se abre el form");
+                Registro re = new Registro();
+
             }
             
         }

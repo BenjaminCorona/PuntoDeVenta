@@ -30,15 +30,15 @@ namespace PuntoDeVenta
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.LblRegistro = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnIniciar = new System.Windows.Forms.Button();
             this.TxtUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnCerrar = new System.Windows.Forms.Button();
-            this.LblRegistro = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,13 +53,26 @@ namespace PuntoDeVenta
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.BtnIniciar);
             this.panel1.Controls.Add(this.TxtUsuario);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(142, 129);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(364, 322);
             this.panel1.TabIndex = 0;
+            // 
+            // LblRegistro
+            // 
+            this.LblRegistro.AutoSize = true;
+            this.LblRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LblRegistro.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRegistro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
+            this.LblRegistro.Location = new System.Drawing.Point(26, 233);
+            this.LblRegistro.Name = "LblRegistro";
+            this.LblRegistro.Size = new System.Drawing.Size(114, 16);
+            this.LblRegistro.TabIndex = 7;
+            this.LblRegistro.Text = "Crear un usuario";
+            this.LblRegistro.Click += new System.EventHandler(this.LblRegistro_Click);
             // 
             // panel2
             // 
@@ -104,22 +117,23 @@ namespace PuntoDeVenta
             this.label2.TabIndex = 3;
             this.label2.Text = "Nombre de usuario";
             // 
-            // button1
+            // BtnIniciar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(151)))), ((int)(((byte)(242)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(151)))), ((int)(((byte)(242)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(135)))), ((int)(((byte)(210)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 252);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(364, 70);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Iniciar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnIniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(151)))), ((int)(((byte)(242)))));
+            this.BtnIniciar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BtnIniciar.FlatAppearance.BorderSize = 0;
+            this.BtnIniciar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(151)))), ((int)(((byte)(242)))));
+            this.BtnIniciar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(135)))), ((int)(((byte)(210)))));
+            this.BtnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnIniciar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnIniciar.ForeColor = System.Drawing.Color.White;
+            this.BtnIniciar.Location = new System.Drawing.Point(0, 252);
+            this.BtnIniciar.Name = "BtnIniciar";
+            this.BtnIniciar.Size = new System.Drawing.Size(364, 70);
+            this.BtnIniciar.TabIndex = 2;
+            this.BtnIniciar.Text = "Iniciar";
+            this.BtnIniciar.UseVisualStyleBackColor = false;
+            this.BtnIniciar.Click += new System.EventHandler(this.BtnIniciar_Click);
             // 
             // TxtUsuario
             // 
@@ -160,19 +174,6 @@ namespace PuntoDeVenta
             this.BtnCerrar.UseVisualStyleBackColor = true;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
-            // LblRegistro
-            // 
-            this.LblRegistro.AutoSize = true;
-            this.LblRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LblRegistro.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRegistro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
-            this.LblRegistro.Location = new System.Drawing.Point(26, 233);
-            this.LblRegistro.Name = "LblRegistro";
-            this.LblRegistro.Size = new System.Drawing.Size(114, 16);
-            this.LblRegistro.TabIndex = 7;
-            this.LblRegistro.Text = "Crear un usuario";
-            this.LblRegistro.Click += new System.EventHandler(this.LblRegistro_Click);
-            // 
             // Sesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,7 +198,7 @@ namespace PuntoDeVenta
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnIniciar;
         private System.Windows.Forms.TextBox TxtUsuario;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;

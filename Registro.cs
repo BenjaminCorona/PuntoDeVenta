@@ -28,5 +28,12 @@ namespace PuntoDeVenta
         {
             Application.Exit();
         }
+
+        private void BtnRegistrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Principal reg = new Principal();
+            reg.Show();
+        }
     }
 }

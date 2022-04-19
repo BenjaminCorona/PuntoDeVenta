@@ -16,5 +16,17 @@ namespace PuntoDeVenta
         {
             InitializeComponent();
         }
+
+        private void LblRegistro_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Sesion reg = new Sesion();
+            reg.Show();
+        }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -33,8 +33,11 @@ namespace PuntoDeVenta
                 timer1.Stop();
                 timer1.Enabled = false;
 
-                MessageBox.Show("Se abre el form");
-                Registro re = new Registro();
+                this.Hide();
+                Sesion reg = new Sesion();
+                reg.Show();
+
+                
 
             }
             

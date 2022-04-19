@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace PuntoDeVenta
 {
-    public partial class Form1 : Form
+    public partial class Sesion : Form
     {
-        public Form1()
+        public Sesion()
         {
             InitializeComponent();
+        }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void LblRegistro_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Registro reg = new Registro();
+            reg.Show();
         }
     }
 }

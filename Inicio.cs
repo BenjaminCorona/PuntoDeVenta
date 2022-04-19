@@ -36,9 +36,6 @@ namespace PuntoDeVenta
                 this.Hide();
                 Sesion reg = new Sesion();
                 reg.Show();
-
-                
-
             }
             
         }
